@@ -207,6 +207,6 @@ for t in range(numero_informacoes):
             p = navegador.find_element(By.XPATH,dicionario['botao'])
             p.click()
             print('\n')
-    #navegador.find_element(By.XPATH,'/html/body/div[1]/div[2]/div[1]/div/div[4]/a').click()
+    
 
 navegador.quit()
