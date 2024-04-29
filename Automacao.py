@@ -191,17 +191,19 @@ for t in range(numero_informacoes):
         time.sleep(0.2)
         info = navegador.find_element(By.XPATH, lista_valores[r])
         if info.is_displayed():
-            #print("O elemento está visível na página.")
             pass
         else:
             print("O elemento não está visível na página.")
+            print('Programa Finalizado')
+            exit()
 
         # Verifica se o elemento está habilitado para interação
         if info.is_enabled():
-            #print("O elemento está habilitado para interação.")
             pass
         else:
             print("O elemento não está habilitado para interação.")
+            print('Programa Finalizado')
+            exit()
         info.send_keys(total_planilhas[r][t])
         if r == (numero_planilhas-1):
             p = navegador.find_element(By.XPATH,dicionario['botao'])
