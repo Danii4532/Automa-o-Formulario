@@ -66,3 +66,7 @@ Após inserir todas essas informações, o programa começa a preencher o formul
 AVISO
 Tenha cuidado ao inserir as informações, caso o programa não consiga encontrar a pagina do link ou não encontre algum dos xpath fornecidos, ele retornará erro.
 Se for usar Texto ou Planilha, verifique se ambos possui as mesmas quantidades de dados e se não possuem valores nulos ou em branco, senão o programa pode retornar erro.
+
+Se tiver alguma dúvida, entre em contato que eu ajudarei com prazer.
+
+Aproveite :)
