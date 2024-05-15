@@ -168,6 +168,12 @@ else:
     print('O xpath fornecido é invalido')
     exit()
 
+confirm = input('O formulario que será preenchido é do google: \n1 - Sim \n2 - Não:\n')
+if confirm == '1':
+    xpath_botao_continua = input('Digite o xpath do botão "Enviar outra resposta":')
+    xpath_botao = Validar_xpath(xpath_botao_continua)
+else:
+    pass
 
 contador = 0
 
@@ -209,6 +215,6 @@ for t in range(numero_informacoes):
             p = navegador.find_element(By.XPATH,dicionario['botao'])
             p.click()
             print('\n')
-    
+    navegador.find_element(By.XPATH,xpath_botao_continua).click()
 
 navegador.quit()
